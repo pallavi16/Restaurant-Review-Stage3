@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang= "en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Info</title>
+  <meta name="robots" content="all"/>
+  <meta name="robots" content="noindex, follow"/>
+  <meta name="description" content="Google Mobile App Specialist">
+  <meta name="keywords" content="Google Scholarship, MWS, Stage 3, JavaScript, CSS, DB, JSON">
+  <meta name="author" content="Pallavi Aggarwal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+
+  <link  href="css/styles.css" rel="stylesheet">
+ <link  href="css/content.css" rel="stylesheet">
+  <link  href="css/styles-mobile.css" media="(max-width: 644px)"rel="stylesheet">
+
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="lightgray" />
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+  
+</head>
+
+<body class="inside" style="width: 100%;">
+  <!-- Beginning header -->
+  <header id = "header" style="width: 100%;">
+    <!-- Beginning nav -->
+    <nav  style="width: 100%;">
+      <h1><a href="/">Restaurant Reviews</a></h1>
+       <!-- Beginning breadcrumb -->
+    <ul id="breadcrumb" aria-label = "breadcrumb">
+      <li><a href="/">Home</a></li>
+    </ul>
+    <!-- End breadcrumb --> 
+    </nav>
+   
+    <!-- End nav -->
+  </header>
+  <!-- End header -->
+
+  <!-- Beginning main -->
+  <main id="maincontent" class = "restaurnt-content">
+    <!-- Beginning map -->
+    <section id="map-container" tableindex = "-1" class = "box">
+      <div id="map" aria-label="map" role="application"></div>
+      
+    </section>
+    <!-- End map -->
+    <!-- Beginning restaurant -->
+    <section id="restaurant-container" class = "box">
+      <h1 id="restaurant-name"></h1>
+      <img id="restaurant-img">
+      <p id="restaurant-cuisine"></p>
+      <p id="restaurant-address"></p>
+      <table id="restaurant-hours"></table>
+    </section>
+    <!-- end restaurant -->
+    <!-- Beginning reviews -->
+    <section id="reviews-container" class = "box">
+      <ul id="reviews-list"></ul>
+    </section>
+   
+    <!-- End reviews -->
+    <section id = "comments" class = "box">
+
+      <form role="form" action="#" method="post" id ="formcomment" style=" width: 100%;padding: 0.8em;
+  margin-left: 0;
+  margin-right: 0;
+  height: auto;"> 
+        <fieldset >
+            <legend>Write a reviews</legend>
+              
+            
+            <div>
+              <label for="username" >Author: <span class="required" style="color: red;">*</span></label>
+            <input type="text" name="username" placeholder="username" size="30" maxlength="100" required="required" class = "title" id= "username" >
+ 
+            </div>
+                         
+            <div id = "stars" aria-label="Star Rating" style="display: flex; width:100px; font-size: 20px;">
+              <label> Rating:<span class="required" style="color: red; width: 20px;">*</span> </label>
+                 <div class="stars_group"> 
+                   <input type="radio" id="stars-5" name="star" value="5"/>
+                  <label title="5 stars" for="stars-5"></label>
+                  
+                  <input type="radio" id="stars-4" name="star" value="4"/>
+                  <label title="4 stars" for="stars-4"></label>
+                  
+                  <input type="radio" id="stars-3" name="star" value="3">
+                  <label title="3 stars" for="stars-3"></label>
+                  
+                  <input type="radio" id="stars-2" name="star" value="2"/>
+                  <label title="2 stars" for="stars-2"></label>
+                  
+                  <input type="radio" id="stars-1" name="star" value="1"/>
+                  <label title="1 stars" for="stars-1"></label>
+                   
+                 </div>
+                      
+                 
+          
+            </div>
+            
+                
+            <div>
+              <label for = "commentsText" class = "comments">Comments:<span class="required" style="color: red;">*</span></label>
+              <textarea rows="6" cols="60" name="comment" id = "commentsText" placeholder="Write a comment here!"></textarea>
+              <button class = "Submit-button" onclick="postReview()"> Submit Comment</button>
+            </div>
+        
+      </fieldset>
+    </form>
+
+    </section>
+  </main>
+  <!-- End main -->
+
+  <!-- Beginning footer -->
+  <footer id="footer">
+    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+  </footer>
+  <!-- End footer -->
+ 
+  <!-- Beginning scripts -->
+  <!-- Database helpers -->
+   <script type="application/javascript" charset="utf-8" src="js/app.js"></script>
+  <script type="application/javascript" charset="utf-8" src="js/idb.js"></script>
+  <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
+  
+  <!-- Main javascript file -->
+  <script type="text/javascript" src="js/restaurant_info.js"></script>
+  <!-- Google Maps -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtQVqrMs4Sq0Y8rxrBjtMMIUDLqjQi750&libraries=places&callback=initMap"></script>
+  <!-- End scripts -->
+
+</body>
+
+</html>

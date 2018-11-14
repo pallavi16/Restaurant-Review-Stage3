@@ -1,0 +1,99 @@
+
+
+/* ====================== Media Queries====================== */
+
+@media screen and (max-width: 644px) {
+      .inside {
+        background-color: #fdfdfd;
+        margin: 0;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto 1fr;
+        grid-template-areas: "header" "maincontent" "footer";
+        justify-content: center;
+      }
+      .inside > #header {
+        grid-area: header;
+        
+      }
+      .inside > #maincontent {
+        grid-area: maincontent;
+        border-top: 132px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .inside > #maincontent {
+        width: 100%;
+        background-color: #f3f3f3;
+        height: 100%;
+      }
+
+      .inside > #footer {
+        grid-area: footer;
+        bottom: 0;
+        padding: 10px;
+        flex: 1 1 auto;
+        grid-row: 3/4;
+        width: 100% !important;
+       
+      }
+
+      .inside #map-container,
+      .inside #restaurant-container,
+      .inside #comments,
+      .inside #reviews-container,
+      .inside #map{
+        width: 100%;
+        margin: 0;
+      }
+      .inside #map-container {
+        background: blue none repeat scroll 0 0;
+        position: absolute;
+        height: 41%;
+        right: 0;
+        top: 132px;
+      }
+
+      .inside #restaurant-container {
+        
+        padding: 310px 40px 20px 30px;
+      }
+
+      .inside #reviews-container {
+        
+          padding: 50px 40px 30px;
+      }
+
+      .inside #map {
+        background-color: #ccc;
+      }
+
+      .inside #restaurant-name {
+         font-size: 20pt;
+        font-weight: 200;
+        letter-spacing: 0;
+        margin: 25px 0 30px;
+      }
+
+        
+      fieldset {
+        padding: 1em;
+        height: 400px;
+        width: 100%;
+        margin-right:0;
+        margin-left:0;
+      }
+      .title {
+        margin-left: 0;
+      }
+
+
+    .filter-options h2 {
+      display: none;
+    }
+}
+

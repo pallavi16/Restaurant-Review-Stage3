@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="robots" content="all"/>
+  <meta name="robots" content="noindex, follow"/>
+  <meta name="description" content="Google Mobile App Specialist">
+  <meta name="keywords" content="Google Scholarship, MWS, Stage 3, JavaScript, CSS, DB, JSON">
+  <meta name="author" content="Pallavi Aggarwal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  
+  <link href="css/styles.css" rel="stylesheet">
+  
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#ffffff" />
+  <title>Restaurant Reviews</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
+</head>
+
+<body  style="width: 100%;">
+  <header style="width: 100%;">
+    <nav style="width: 100%;">
+      <h1><a href="/">Restaurant Reviews</a></h1>
+    </nav>
+  </header>
+
+  <main id="maincontent" style="width: 100%;">
+    <section id="map-container" tableindex = "-1" style="width: 100%">
+      <div id="map" aria-label= "map" role="application"></div>
+    </section>
+    
+    <section id = "content" style="width: 100%;">
+
+      <div class="filter-options" style="width: 100%">
+        <h2 class="result">Filter Results</h2>
+        
+        <select id="neighborhoods-select" aria-label="Select Neighborhoods" name="neighborhoods" onchange="updateRestaurants()">
+          <option value="all">All Neighborhoods</option>
+        </select>
+        
+        <select id="cuisines-select" aria-label="Select Cuisines" name="cuisines" onchange="updateRestaurants()">
+          <option value="all">All Cuisines</option>
+        </select>
+      </div>
+      <ul id="restaurants-list"></ul>
+    </section>
+    
+  </main>
+   <footer id="footer" style="width: 100%;">
+    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+  </footer>
+  <script type="application/javascript" charset="utf-8" src="js/app.js"></script>
+  <script type="application/javascript" charset="utf-8" src="js/idb.js"></script>
+  <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
+  <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtQVqrMs4Sq0Y8rxrBjtMMIUDLqjQi750
+&libraries=places&callback=initMap"></script>
+
+ 
+</body>
+
+</html>

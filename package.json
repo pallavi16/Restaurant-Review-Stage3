@@ -1,0 +1,57 @@
+{
+  "name": "restaurant-reviews",
+  "version": "1.0.0",
+  "description": "Restaurant Review Stage 3",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pallavi16/Restaurant-Review-Stage3.git"
+  },
+  "author": "Pallavi Aggarwal",
+  "license": "MIT",
+  "homepage": "https://github.com/pallavi16/Restaurant-Review-Stage3#readme",
+  "dependencies": {
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "idb": "^2.1.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.24.6",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-bro": "^1.0.3",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-flatmap": "^1.0.2",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-inline-source": "^3.2.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.3.0",
+    "gulp-rev": "^8.1.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-usemin": "^0.3.29",
+    "gulp-webp": "^3.0.0",
+    "merge-stream": "^1.0.1",
+    "sw-precache": "^5.2.1"
+  },
+  "keywords": [
+    "Javascript",
+    "Gulp",
+    "HTML5",
+    "Nodejs",
+    "PWA"
+  ]
+}

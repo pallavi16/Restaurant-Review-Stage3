@@ -11,6 +11,10 @@ Some of these features include:
 3. Optimizing the site to meet stricter performance criterias than applied in Stage Two.
 4. Testing using Lighthouse to achieve performance > 90 (a goal measure) in  different characteristics.
 
+Here's my final report for Lighthouse:
+
+![Screenshot](lighthouse_screenshot.PNG)
+
 
 ## Installing and running the development server (Same as used in Stage Two)
 Download the server from https://github.com/udacity/mws-restaurant-stage-2. You can either use command line to clone the repo using 'git clone URL' or you can download the zip folder given in the server repo. To run the server, make sure that you have node, npm , sails installed on your machine. Now, start the server by running node server from root folder. By default, the port is set to 1337 and can be run on http://localhost:1337. However, the port can be changed if needed.

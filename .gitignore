@@ -1,58 +1,18 @@
-css/styles1.css
-css/fake.css
+
 css/clone.css
-js/validation.js
-appclone.js
 node_modules
-data
-CODEOWNERS
-requirements.txt
 dist
-clone
 fetch
 api
 config
 .tmp
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-
-# Logs and databases #
-######################
-*.log
-*.sql
-*.sqlite
-
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
 
 # Build Systems #
 ######################
 node_modules/
-bower_components/
-.sass-cache
-*.css.map
-package-lock.json
 build/
 dist/
-maps/
-public/maps/
+
 
 # Builds #
 # Comment out the build folder below when uploading to heroku #
@@ -60,5 +20,3 @@ public/maps/
 
 dist/css/
 dist/js/
-map-geomap.html
-postcomment.html

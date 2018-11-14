@@ -288,9 +288,9 @@ map {
 }
 
 #restaurants-list li a {
-  background-color: orange;
+  background-color: #FFA805;
   border-bottom: 3px solid #eee;
-  color: #fff;
+  color: #2B2B2B;
   display: inline-block;
   margin: 15px 0 0;
   padding: 8px 30px 10px;
@@ -298,6 +298,13 @@ map {
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
+}
+
+#restaurants-list li a:focus,#restaurants-list li a:hover {
+  outline: 0;
+  box-shadow: 0 0 8px 3px;
+  background-color:  #2B2B2B;
+  color: #FFA805;
 }
 
 .offline-label {

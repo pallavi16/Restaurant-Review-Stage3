@@ -39,7 +39,7 @@ static createIndexedDB() {
         const reviewsStore = upgradeDb.createObjectStore('reviews', {
           keyPath: 'id'});
         reviewsStore.createIndex('restaurant','restaurant_id');
-        //reviewsStore.createIndex('restaurant','restaurant_id', {unique: true});
+        
         }
 
   }); 
@@ -47,7 +47,6 @@ static createIndexedDB() {
 
  
   /**
-   * python3 -m http.server 3500
    * Database URL.
    * Change this to restaurants.json file location on your server.
    */

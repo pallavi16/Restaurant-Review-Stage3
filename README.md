@@ -1,7 +1,15 @@
 
 
 # Restaurant-Review-Stage3
+
+### You can find Restaurant Review Stage 1 at https://github.com/pallavi16/Restaurant-Review 
+
+### You can find Restaurant Review Stage 2 at https://github.com/pallavi16/Restaurant-Review-Stage2
+
+
 ## Part 3: Additional functionality after connecting the fully responsive, mobile-ready Restaurant review application in part 2 from part 1 to an external server
+
+
 
 ## Overview:
 In Stage Three of Restaurant-Review Application, we utilize the fully-responsive, mobile-ready application from Stage 1 and also the connected application to external server from Stage 2 into a fully functional application with a lot more features. 
